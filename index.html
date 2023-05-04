@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="styles/style.css">
-    <link type="image/x-icon" href="images/icon-v1.png" rel="shortcut icon">
-    <title>Morse Translator</title>
-  </head>
-  <body>
 
-    <header class="header">
-      <h1>Morse Translator</h1>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/style.css">
+  <link type="image/x-icon" href="images/icon-v1.png" rel="shortcut icon">
+  <title>Morse Translator</title>
+</head>
 
-    <script src="scripts/script.js"></script>
-  </body>
+<body>
+
+  <header class="header">
+    <h1>Morse Translator</h1>
+  </header>
+
+  <main class="translator">
+    <div class="translator__text">
+      <label for="translator__text__label">
+        <h2 class="translator__title">Text</h2>
+        <textarea class="translator__input text"></textarea>
+      </label>
+    </div>
+
+    <div class="translator__morse">
+      <label for="translator__morse__label">
+        <h2 class="translator__title">Morse</h2>
+        <textarea class="translator__input morse"></textarea>
+      </label>
+    </div>
+  </main>
+
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>

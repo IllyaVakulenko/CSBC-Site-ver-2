@@ -14,7 +14,40 @@ header.header {
     border-bottom: solid 1px #4d535e;
 }
 
-header.header > h1 {
+header.header>h1 {
     font-weight: 500;
     font-size: 30px;
+}
+
+main.translator {
+    margin-top: 32px;
+    padding: 64px;
+}
+
+div.translator__text {
+    /* width: min-content; */
+    position: absolute;
+    left: 64px;
+    width: 40%;
+    /* border: 4px solid #ffffff; */
+}
+
+div.translator__morse {
+    /* width: min-content; */
+    position: absolute;
+    right: 64px;
+    width: 40%;
+    /* border: 4px solid #ffffff; */
+}
+
+h2.translator__title {
+    margin-left: .5em;
+}
+
+textarea.translator__input {
+    margin-top: 1em;
+    background-color: #677083;
+    width: 100%;
+    height: 128px;
+    border-radius: 1em;
 }
