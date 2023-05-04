@@ -1,17 +1,20 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #282c34;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #A6ADBB;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+/* header */
 
 header.header {
     padding: 8px;
-    text-align: center;
     border-bottom: solid 1px #4d535e;
+    text-align: center;
 }
 
 header.header>h1 {
@@ -19,35 +22,57 @@ header.header>h1 {
     font-size: 30px;
 }
 
+/* main */
+
 main.translator {
-    margin-top: 32px;
-    padding: 64px;
+    position: relative;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    max-width: 1150px;
+    min-height: 250px;
+    /* min-width: 90%;
+    max-width: 97%; */
+}
+
+div.translator__text,div.translator__morse {
+    /* width: min-content; */
+    position: absolute;
+    width: 45%;
+    /* max-width: 40%; */
+    /* border: 4px solid #ffffff; */
 }
 
 div.translator__text {
-    /* width: min-content; */
-    position: absolute;
-    left: 64px;
-    width: 40%;
-    /* border: 4px solid #ffffff; */
+    left: 1.5rem;
+    margin-right: auto;
 }
-
 div.translator__morse {
-    /* width: min-content; */
-    position: absolute;
-    right: 64px;
-    width: 40%;
-    /* border: 4px solid #ffffff; */
+    right: 1.5rem;
+    margin-left: auto;
 }
 
 h2.translator__title {
-    margin-left: .5em;
+    padding: 8px 4px;
 }
 
 textarea.translator__input {
-    margin-top: 1em;
-    background-color: #677083;
+    padding: .5rem 1rem;
     width: 100%;
-    height: 128px;
+    height: 9rem;
+    min-height: 3rem;
+    border: 1px solid #444b58;
     border-radius: 1em;
+    resize: vertical;
+
+    background-color: #30343c;
+    color: inherit;
+    font-family: inherit;
+    font-size: .875rem;
+    line-height: 2;
+}
+
+textarea.translator__input:hover {
+    border: 2px solid #4265ac;
 }
