@@ -32,25 +32,29 @@ main.translator {
     padding: 1.5rem;
     max-width: 1150px;
     min-height: 250px;
-    /* min-width: 90%;
-    max-width: 97%; */
 }
 
-div.translator__text,div.translator__morse {
-    /* width: min-content; */
-    position: absolute;
-    width: 45%;
-    /* max-width: 40%; */
-    /* border: 4px solid #ffffff; */
+.clearfix {
+    width: 100%;
 }
 
-div.translator__text {
-    left: 1.5rem;
-    margin-right: auto;
+.clearfix__sub {
+    width: 50%;
 }
+
+.clearfix__sub.left {
+    float: left;
+    padding-right: 15px;
+}
+
+.clearfix__sub.right {
+    float: right;
+    padding-left: 15px;
+}
+
+div.translator__text,
 div.translator__morse {
-    right: 1.5rem;
-    margin-left: auto;
+    width: 100%;
 }
 
 h2.translator__title {
@@ -63,7 +67,7 @@ textarea.translator__input {
     height: 9rem;
     min-height: 3rem;
     border: 1px solid #444b58;
-    border-radius: 1em;
+    border-radius: .5rem;
     resize: vertical;
 
     background-color: #30343c;
@@ -74,5 +78,9 @@ textarea.translator__input {
 }
 
 textarea.translator__input:hover {
-    border: 2px solid #4265ac;
+    outline: #7899dd solid 1px;
+}
+
+textarea.translator__input:focus {
+    outline: #4265ac solid 2px;
 }
