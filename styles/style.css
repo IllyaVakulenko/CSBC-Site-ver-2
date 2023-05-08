@@ -84,3 +84,30 @@ textarea.translator__input:hover {
 textarea.translator__input:focus {
     outline: #4265ac solid 2px;
 }
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    background-color: #30343c;
+    width: 10px;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-button {
+    height: 10px;
+    background-color: #41454d;
+    border-radius: 100%;
+    
+    border: 2px solid #30343c
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4265ac;
+    border-radius: .5rem;
+    border: 2px solid #30343c;
+}
+
+::-webkit-resizer {
+    background-color: #30343c;
+    /* border-radius: 100%; */
+}
